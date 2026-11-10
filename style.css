@@ -1,0 +1,22 @@
+.container{
+    height: 100vh;
+}
+
+.video{
+    width: 100%;
+    height: 50vh;
+    border-bottom: 1px solid black;
+}
+
+.controller{
+    width: 100%;
+    height: 48vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.form{
+    width: 98%;
+    border: 1px dashed black;
+}
