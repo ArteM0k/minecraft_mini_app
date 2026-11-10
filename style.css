@@ -43,5 +43,11 @@ select, button, input{
         height: 195px;
         align-items:flex-start;
     }
+    #form3{
+        flex-direction: column;
+        row-gap: 10px;
+        height: 195px;
+        align-items:flex-start;
+    }
 }
 
