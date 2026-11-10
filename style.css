@@ -1,5 +1,5 @@
 .container{
-    height: 98vh;
+    height: 96vh;
 }
 
 .video{
@@ -35,7 +35,7 @@ select, button, input{
     #form1{
         flex-direction: column;
         row-gap: 10px;
-        height: 18vh;
+        height: 20vh;
         align-items:flex-start;
     }
 }
