@@ -21,7 +21,7 @@
 
 .form{
     width: 98%;
-    height: 70px;
+    height: 90px;
     display: flex;
     flex-direction: row;
     column-gap: 20px;
@@ -38,7 +38,7 @@ select, button, input{
     #form1{
         flex-direction: column;
         row-gap: 10px;
-        height: 170px;
+        height: 190px;
         align-items:flex-start;
     }
 }
