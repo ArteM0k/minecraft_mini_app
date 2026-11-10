@@ -45,10 +45,6 @@ select, button, input{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-input{
-    width: 60%;
-}
-
 @media (max-width: 600px){
     #form1{
         flex-direction: column;
@@ -61,6 +57,9 @@ input{
         row-gap: 10px;
         height: 140px;
         align-items:flex-start;
+    }
+    input{
+        width: 75%;
     }
 }
 
