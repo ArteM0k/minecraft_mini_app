@@ -30,7 +30,7 @@ html, body {
 
 .form{
     width: 100%;
-    height: 80px;
+    height: 70px;
     display: flex;
     flex-direction: row;
     column-gap: 20px;
@@ -49,13 +49,13 @@ select, button, input{
     #form1{
         flex-direction: column;
         row-gap: 10px;
-        height: 180px;
+        height: 170px;
         align-items:flex-start;
     }
     #form3{
         flex-direction: column;
         row-gap: 10px;
-        height: 170px;
+        height: 140px;
         align-items:flex-start;
     }
 }
