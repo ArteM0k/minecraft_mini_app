@@ -31,3 +31,12 @@ select, button, input{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@media (max-width: 600px){
+    #form1{
+        flex-direction: column;
+        row-gap: 10px;
+        height: 18vh;
+        align-items:flex-start;
+    }
+}
+
