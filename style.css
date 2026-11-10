@@ -49,7 +49,7 @@ select, button, input{
     #form1{
         flex-direction: column;
         row-gap: 10px;
-        height: 170px;
+        height: 165px;
         align-items:flex-start;
     }
     #form3{
