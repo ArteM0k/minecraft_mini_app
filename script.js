@@ -3,8 +3,6 @@ const tg = window.Telegram.WebApp;
 tg.ready();
 tg.expand();
 
-console.log(tg.version);
-
 var username = null;
 
 user.onchange = set_user;
