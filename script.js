@@ -65,8 +65,8 @@ function summon_mob(){
         tg.showAlert("Select a mob");
         return;
     }
-    if (number === ""){
-        tg.showAlert("Enter a number of mobs");
+    if (number === "" || number === "0" || number[0] === "-"){
+        tg.showAlert("Incorrect number of mobs");
         return;
     }
     let package = JSON.stringify({
