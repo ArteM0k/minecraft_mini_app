@@ -3,6 +3,8 @@ const tg = window.Telegram.WebApp;
 tg.ready();
 tg.expand();
 
+console.log(tg.version);
+
 var username = null;
 
 user.onchange = set_user;
@@ -26,11 +28,11 @@ function teleport_player(){
     let ycord = y.value.trim();
     let zcord = z.value.trim();
     if (xcord === "" || ycord === "" || zcord === ""){
-        tg.showAlert("Fill all the gaps");
+        alert("Fill all the gaps");
         return;
     }
     if (username === null){
-        tg.showAlert("Select a user");
+        alert("Select a user")
         return;
     }
     let package = JSON.stringify({
@@ -39,7 +41,7 @@ function teleport_player(){
         y: ycord,
         z: zcord
     });
-    console.log(package);
+    send_data(package);
 }
 
 function kill_player(){
@@ -60,4 +62,8 @@ function execute_command(){
 
 function build_structure(){
     alert("build");
+}
+
+function send_data(data){
+    console.log(data);
 }
