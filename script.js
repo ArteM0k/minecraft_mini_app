@@ -61,7 +61,20 @@ function summon_mob(){
         tg.showAlert("Select a user");
         return;
     }
-    alert(entity, number);
+    if (entity === ""){
+        tg.showAlert("Select a mob");
+        return;
+    }
+    if (number === ""){
+        tg.showAlert("Enter a number of mobs");
+        return;
+    }
+    let package = JSON.stringify({
+        user: username,
+        action: "SUMMON",
+        params: [entity, number]
+    });
+    send_data(package);
 }
 
 function send_mes(){
