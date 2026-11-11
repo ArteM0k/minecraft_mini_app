@@ -35,19 +35,33 @@ function teleport_player(){
     }
     let package = JSON.stringify({
         user: username,
-        x: xcord,
-        y: ycord,
-        z: zcord
+        action: "TP",
+        params: [xcord, ycord, zcord]
     });
     send_data(package);
 }
 
 function kill_player(){
-    alert("kill");
+    if (username === null){
+        tg.showAlert("Select a user");
+        return;
+    }
+    let package = JSON.stringify({
+        user: username,
+        action: "KILL",
+        params: []
+    });
+    send_data(package);
 }
 
 function summon_mob(){
-    alert("summon");
+    let entity = mob.value;
+    let number = amount.value;
+    if (username === null){
+        tg.showAlert("Select a user");
+        return;
+    }
+    alert(entity, number);
 }
 
 function send_mes(){
