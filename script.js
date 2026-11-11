@@ -28,11 +28,11 @@ function teleport_player(){
     let ycord = y.value.trim();
     let zcord = z.value.trim();
     if (xcord === "" || ycord === "" || zcord === ""){
-        alert("Fill all the gaps");
+        tg.showAlert("Fill all the gaps");
         return;
     }
     if (username === null){
-        alert("Select a user")
+        tg.showAlert("Select a user");
         return;
     }
     let package = JSON.stringify({
