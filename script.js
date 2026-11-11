@@ -65,7 +65,7 @@ function summon_mob(){
         tg.showAlert("Select a mob");
         return;
     }
-    if (number === NaN){
+    if (number === ""){
         tg.showAlert("Enter a number of mobs");
         return;
     }
