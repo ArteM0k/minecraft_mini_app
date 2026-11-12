@@ -78,15 +78,57 @@ function summon_mob(){
 }
 
 function send_mes(){
-    alert("send");
+    let mes = message.value.trim();
+    if (username === null){
+        tg.showAlert("Select a user");
+        return;
+    }
+    if (mes === ""){
+        tg.showAlert("Enter your message");
+        return;
+    }
+    let package = JSON.stringify({
+        user: username,
+        action: "MESSAGE",
+        params: [mes]
+    });
+    send_data(package);
 }
 
 function execute_command(){
-    alert("command");
+    let com = command.value.trim();
+    if (username === null){
+        tg.showAlert("Select a user");
+        return;
+    }
+    if (com === ""){
+        tg.showAlert("Enter a command");
+        return;
+    }
+    let package = JSON.stringify({
+        user: username,
+        action: "COMMAND",
+        params: [com]
+    });
+    send_data(package);
 }
 
 function build_structure(){
-    alert("build");
+    let building = structure.value;
+    if (username === null){
+        tg.showAlert("Select a user");
+        return;
+    }
+    if (building === ""){
+        tg.showAlert("Select a structure");
+        return;
+    }
+    let package = JSON.stringify({
+        user: username,
+        action: "BUILD",
+        params: [building]
+    });
+    send_data(package);
 }
 
 function send_data(data){
